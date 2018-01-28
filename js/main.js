@@ -1,5 +1,5 @@
 // Initialize Firebase
-  var config = {
+var config = {
     apiKey: "AIzaSyAzS0COGKf_1hearowkt0TGMGPIdtz3C0Q",
     authDomain: "producto-final-11726.firebaseapp.com",
     databaseURL: "https://producto-final-11726.firebaseio.com",
@@ -11,7 +11,7 @@
 
 $('#botonGoogle').click(function(){
   authGoogle();
-});
+})
 
 function authGoogle(){
   var provider = new firebase.auth.GoogleAuthProvider();
