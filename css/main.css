@@ -1,22 +1,60 @@
+.jumbotron{
+  background-image: url('../assets/images/sunset.jpg');
+  background-position: bottom;
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+nav{
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.bg-image{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: mymove 5s infinite;
+}
 
+/* animacion */
 
+/* .effect{
+  animation-name: rebote;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+} */
 
+@keyframes mymove {
+  from {bottom: 0px;}
+    to {bottom: 200px;}
 
+  /* 0% {
+    transform: translateY(-150px);
+  }
+  25%, 100% {
+    transform:translateY(0px);
+  }
+  50% {
+    transform:translateY(-75px);
+  } */
+}
 
+.jumbotron p{
+  color: white;
+  font-size: 2em;
+  margin-top: 4em;
+}
 
+.jumbotron .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
+#homePage-search-btn{
+  padding: 15px 15px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
