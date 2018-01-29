@@ -1,6 +1,6 @@
 function loadPage(){
   splash();
-
+  // funcion q al dar click a la imagen mande a loggearse
 };
 
 function splash(){
