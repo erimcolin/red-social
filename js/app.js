@@ -41,4 +41,21 @@ function autentication(provider) {
   console.log(credential);
   // ...
 });
+
+firebase.auth().signOut().then(function() {
+  // Sign-out successful.
+}).catch(function(error) {
+  // An error happened.
+});
+
 }
+
+
+
+// base de datos
+var $title = $('#title');
+var database = firebase.database().ref().child('titulo');
+
+database.on('value', function(snapshot){
+  $title.text(snapshot.val());
+})
