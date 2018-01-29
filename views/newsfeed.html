@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/newsfeed.css">
+    <title>Newsfeed</title>
+  </head>
+  <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Aquí va el nombre de la red</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" role="form">
+                    <input type="text" placeholder="Buscar lugares" class="form-control">
+                    <button id="botonGoogle" type="submit" class="btn btn-success">Sign in Google</button>
+                    <button type="button" class="btn btn-primary">añadir foto</button>
+                </form>
+            </div><!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <section class="container-fluid">
+        <div class="jumbotron">
+            <div class="container">
+                <p class="text-center">Descubre lugares únicos</p>
+            </div>
+        </div>
+        <!-- fotos de perfiles seguidos -->
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <img class="col-sm-3 col-md-3" src="https://dummyimage.com/10x10" alt="">
+                    <h3 class="col-sm-9 col-md-9 text-left">Fulanito</h3>
+                </div>
+                <img class="img-responsive" src="https://dummyimage.com/300x300" alt="">
+                <p>Descripción de la imagen</p>
+                <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+
+                <textarea class="form-control" rows="1"></textarea>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <img class="col-sm-3 col-md-3" src="https://dummyimage.com/10x10" alt="">
+                    <h3 class="col-sm-9 col-md-9 text-left">Fulanito</h3>
+                </div>
+                <img class="img-responsive" src="https://dummyimage.com/300x300" alt="">
+                <p>Descripción de la imagen</p>
+                <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+    
+                <textarea class="form-control" rows="1"></textarea>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <img class="col-sm-3 col-md-3" src="https://dummyimage.com/10x10" alt="">
+                    <h3 class="col-sm-9 col-md-9 text-left">Fulanito</h3>
+                </div>
+                <img class="img-responsive" src="https://dummyimage.com/300x300" alt="">
+                <p>Descripción de la imagen</p>
+                <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+        
+                <textarea class="form-control" rows="1"></textarea>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" tabindex="-1" role="dialog" id="info">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <img class="col-sm-3 col-md-3" src="https://dummyimage.com/10x10" alt="">
+                  <h3 class="col-sm-9 col-md-9 text-left">Fulanito</h3>                </div>
+                <div class="modal-body">
+                    <img class="img-responsive col-md-12" src="https://dummyimage.com/300x300" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam non deleniti omnis iure ipsum qui corrupti, veniam minima dicta aspernatur rem distinctio sunt nam perspiciatis delectus earum. Ex, voluptas facere!</p>
+                    <textarea class="form-control" rows="1"></textarea>                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+        
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="../js/vendor/bootstrap.min.js"></script>
+    <script src="../js/vendor/newsfeed.js"></script>
+  </body>
+</html>
