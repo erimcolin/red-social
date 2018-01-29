@@ -41,3 +41,20 @@ nav{
     transform:translateY(-75px);
   } */
 }
+
+.jumbotron p{
+  color: white;
+  font-size: 2em;
+  margin-top: 4em;
+}
+
+.jumbotron .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homePage-search-btn{
+  padding: 15px 15px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
