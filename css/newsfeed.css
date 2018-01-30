@@ -1,0 +1,30 @@
+.principal-color {
+    background-color: rgb(10,172,29);
+}
+
+.white-letter {
+    color: white;
+}
+
+.perfil-size {
+    width: 80px;
+}
+
+.photo-size {
+    width: 300px;
+    height: 300px;
+}
+
+.jumbotron {
+    background-image: url(../assets/images/img14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    background-size: cover;
+}
+
+#homePage {
+    /* margin-left:35%;  */
+    padding: 15px 15px;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
