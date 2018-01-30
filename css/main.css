@@ -61,3 +61,8 @@ nav{
  nav {
    background-color: rgba(0, 0, 0, 0.5)
  }
+
+ .width-img{
+   width: 350px;
+   height: 350px;
+ }

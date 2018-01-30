@@ -9,46 +9,61 @@ var config = {
   };
   firebase.initializeApp(config);
 
+// boton para autenticarse con google
 $('#botonGoogle').click(function(){
-  authGoogle();
+  autentication();
 })
 
-function authGoogle(){
-  var provider = new firebase.auth.GoogleAuthProvider();
-  autentication(provider);
-}
+// function authGoogle(){
+//   var provider = new firebase.auth.GoogleAuthProvider();
+//   autentication(provider);
+// }
 
-function autentication(provider) {
-  firebase.auth().signInWithPopup(provider).then(function(result) {
-  // This gives you a Google Access Token. You can use it to access the Google API.
-  var token = result.credential.accessToken;
-  // The signed-in user info.
-  var user = result.user;
-  console.log(result);
-  // ...
-}).catch(function(error) {
-  console.log(error);
-  // Handle Errors here.
-  var errorCode = error.code;
-  console.log(errorCode);
-  var errorMessage = error.message;
-  console.log(errorMessage);
-  // The email of the user's account used.
-  var email = error.email;
-  console.log(email);
-  // The firebase.auth.AuthCredential type that was used.
-  var credential = error.credential;
-  console.log(credential);
-  // ...
-});
+function autentication() {
+    if (!firebase.auth().currentUser) {
+      var provider = new firebase.auth.GoogleAuthProvider();
+      provider.addScope('https://www.googleapis.com/auth/plus.login');
+      firebase.auth().signInWithPopup(provider).then(function(result) {
+        var token = result.credential.accessToken;
+        // Informacion del usurio resgistrado
+        var user = result.user;
+        window.location.href = 'user.html';
+      }).catch(function(error) {
+        // Manejo de errores
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // El correo electrónico utilizado de la cuenta del usuario
+        var email = error.email;
+        // El firebase.auth.AuthCredential tipo que se utilizado
+        var credential = error.credential;
+        if (errorcode === 'auth/account-exists-with-different-credential') {
+          alert('Es el mismo usuario');
+        }
+      });
+    } else {
+      firebase.auth().signOut();
+    }
+  };
 
-firebase.auth().signOut().then(function() {
-  // Sign-out successful.
-}).catch(function(error) {
-  // An error happened.
-});
+ // boton para cerrar sesión
+  $('#signOut').on('click', function() {
+      // console.log('funciona');
+      firebase.auth().signOut().then(function(user) {
+        console.log('cerrando sesión');
+        window.location.href = 'index.html';
+      }).catch(function(error) {
+        console.log(error);
+      });
+    });
 
-}
+
+// firebase.auth().signOut().then(function() {
+//   // Sign-out successful.
+// }).catch(function(error) {
+//   // An error happened.
+// });
+//
+// }
 
 
 
