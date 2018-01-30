@@ -1,3 +1,7 @@
+body{
+  background-color: #E5E4E2;
+}
+
 .jumbotron{
   background-image: url('../assets/images/img11.jpg');
   background-position: center;
@@ -66,3 +70,7 @@ nav{
    width: 350px;
    height: 350px;
  }
+
+#homePage h3 p {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
