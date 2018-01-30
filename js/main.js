@@ -11,5 +11,4 @@ function splash(){
   }, 2000);
 }
 
-
 $(document).ready(loadPage);
