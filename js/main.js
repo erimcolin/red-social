@@ -9,7 +9,7 @@ function loadPage(){
   // $('form').submit(filterPlaces);
   $('#search_button').click(cleanInput);
   paintPost(data);
-  
+
   //$textBtn.on('click', botonSend);
 };
 
@@ -113,7 +113,7 @@ function paintPost(array) {
     $divColumna.append($img);
     $divColumna.append($h3);
     $divColumna.append($p);
-  
+
     console.log($container)
     $container.prepend($divColumna);
   });
@@ -128,4 +128,3 @@ function paintPost(array) {
 
 
 $(document).ready(loadPage);
-
