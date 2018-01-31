@@ -48,12 +48,14 @@
         <p class="text-center">Descubre lugares únicos</p>
         <div class="row">
           <div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
-            <div id="homePage-search-btn" class="input-group">
-              <input type="text" class="form-control" placeholder="Buscar lugares...">
-              <span class="input-group-btn">
-                <button class="btn btn-danger" type="button">Ir</button>
-              </span>
-            </div><!-- /input-group -->
+            <form>
+              <div id="homePage-search-btn" class="input-group">
+                <input id="find-places" type="text" class="form-control" placeholder="Buscar lugares...">
+                <span class="input-group-btn">
+                  <button id="search_button" class="btn btn-danger" type="button">Ir</button>
+                </span>
+              </div><!-- /input-group -->
+            </form>
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
         <!-- <form class="navbar-form" role="form">
@@ -65,7 +67,7 @@
     </div>
     <!-- contenedor fotos -->
     <div class="container homePage">
-      <div class="row">
+      <div id="photo_container" class="row">
         <div class="col-md-4 col-sm-6 col-xs-12">
           <img class="img-responsive width-img" src="assets/images/image1.jpg" alt="">
           <h3>Gran cañon</h3>
@@ -129,5 +131,6 @@
         <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
         <script src="js/autentication.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/data.js"></script>
     </body>
 </html>
