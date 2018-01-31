@@ -1,7 +1,8 @@
+
 function loadPage(){
 
   // splash();
-  $textBtn.on('click', botonSend);
+
   // $newsfeed.click(changeView);
 
   $searchImput.keyup(filterPlaces);
@@ -74,12 +75,13 @@ function cleanInput(e) {
 }
 
 // función para publicar texto
-var $textArea = $('.new-text');
+var $textArea = $('#new-text');
 var $textBtn = $('#send');
 var $container = $('#content');
 
-function botonSend(){
-  console.log(hola);
+function botonSend(e){
+  e.preventDefault();
+  console.log('hola');
   if ($textArea.val()) {
     $container.prepend('<div class="new-item"><div class="row"><div class="col-md-10" id="new-container"></div></div></div>');
     var $text = $('#new-container');
@@ -127,5 +129,5 @@ function paintPost(array) {
 //   location.href = 'views/newsfeed.html';
 // };
 
-
+$(document).on('click', '.new-text', botonSend);
 $(document).ready(loadPage);
