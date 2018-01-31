@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <script src="https://use.fontawesome.com/7b85ef11c4.js"></script>
     <link rel="stylesheet" href="../css/newsfeed.css">
     <!-- <link rel="stylesheet" href="../css/main.css">     -->
@@ -29,13 +30,25 @@
                   <div class="collapse navbar-collapse white-letter" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right white-lette">
                       <li class="dropdown white-lette">
+                        <li><div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><span class=""></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Miranda Solar agregó una nueva foto</a></li>
+                              <li><a href="#">Mira lo que Ana Gil acaba de compartir</a></li>
+                              <li><a href="#">A sofía Allen le gustó una foto que compartiste</a></li>
+                              <li><a href="#">Mostrar más</a></li>
+                            </ul>
+                          </div>
+                        </li>
                         <li><button type="button" class="btn btn-warning">Add a photo</button></li>
                         <li> <button id="signOut" type="submit" href="../index.html" class="btn btn-danger">Sign Out</button></li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Anna Karen<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="user.html"><i class="fa fa-smile-o" aria-hidden="true"></i></a></li>
+                            <li><a href="user.html"><i class="fa fa-smile-o" aria-hidden="true"></i> My Profile</a></li>
                           <!-- <li><a href="#">Action</a></li>
                           <li><a href="#">Another action</a></li>
                           <li><a href="#">Something else here</a></li>
@@ -79,12 +92,14 @@
                         <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
                         <div class="row">
                             <textarea class="form-control new-text" rows="1"></textarea>
+                            <button id="send" type="button">send</button>
 
                         </div>
                     </div>
                 </div>
             <div class="panel panel-default col-sm-12 col-md-3 back-color">
                 <div class="panel-heading">
+
                     <div class="row">
                         <img class="col-sm-3 perfil-size" src="../assets/images/perfil2.jpg" alt="">
                         <div class="col-sm-8">
@@ -103,6 +118,7 @@
                     <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
                     <div class="row">
                         <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
                     </div>
                 </div>
             </div>
@@ -126,6 +142,7 @@
                     <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
                     <div class="row">
                         <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
                     </div>
                 </div>
             </div>
@@ -142,6 +159,7 @@
                     <div class="row">
                         <!-- <p class="col-md-12" >Localización</p> -->
                     </div>
+                    <span class="glyphicon glyphicon-heart-emptyt " aria-hidden="true"></span>
                     <img class="img-responsive photo-size" src="../assets/images/img5.jpg" alt="">
                     <div class="row">
                         <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
@@ -157,30 +175,213 @@
                 </div>
             </div>
             <div class="panel panel-default col-sm-12 col-md-3 back-color">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
-                            <div class="col-sm-6">
-                                <h3 class="text-left">Miranda Solar</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel-body">
-
-                        <div class="row">
-                            <!-- <p class="col-md-12" >Localización</p> -->
-                        </div>
-                        <img id="i" />
-                        <!-- <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt=""> -->
-                        <div class="row">
-                            <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
-                        </div>
-                        <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
-                        <div class="row">
-                            <textarea class="form-control" rows="1"></textarea>
+                <div class="panel-heading">
+                    <div class="row">
+                        <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
+                        <div class="col-sm-8">
+                            <h3 id="title" class="text-left">Miranda Solar</h3>
                         </div>
                     </div>
                 </div>
+                <div class="panel-body">
+                    <!-- <div class="row">
+                        <p class="col-md-12">California</p>
+                    </div> -->
+                    <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt="">
+                    <div class="row">
+                        <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+                    <div class="row">
+                        <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default col-sm-12 col-md-3 back-color">
+                <div class="panel-heading">
+                    <div class="row">
+                        <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
+                        <div class="col-sm-8">
+                            <h3 id="title" class="text-left">Miranda Solar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- <div class="row">
+                        <p class="col-md-12">California</p>
+                    </div> -->
+                    <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt="">
+                    <div class="row">
+                        <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+                    <div class="row">
+                        <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default col-sm-12 col-md-3 back-color">
+                <div class="panel-heading">
+                    <div class="row">
+                        <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
+                        <div class="col-sm-8">
+                            <h3 id="title" class="text-left">Miranda Solar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- <div class="row">
+                        <p class="col-md-12">California</p>
+                    </div> -->
+                    <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt="">
+                    <div class="row">
+                        <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+                    <div class="row">
+                        <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default col-sm-12 col-md-3 back-color">
+                <div class="panel-heading">
+                    <div class="row">
+                        <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
+                        <div class="col-sm-8">
+                            <h3 id="title" class="text-left">Miranda Solar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- <div class="row">
+                        <p class="col-md-12">California</p>
+                    </div> -->
+                    <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt="">
+                    <div class="row">
+                        <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+                    <div class="row">
+                        <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default col-sm-12 col-md-3 back-color">
+                <div class="panel-heading">
+                    <div class="row">
+                        <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
+                        <div class="col-sm-8">
+                            <h3 id="title" class="text-left">Miranda Solar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- <div class="row">
+                        <p class="col-md-12">California</p>
+                    </div> -->
+                    <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt="">
+                    <div class="row">
+                        <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+                    <div class="row">
+                        <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default col-sm-12 col-md-3 back-color">
+                <div class="panel-heading">
+                    <div class="row">
+                        <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
+                        <div class="col-sm-8">
+                            <h3 id="title" class="text-left">Miranda Solar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- <div class="row">
+                        <p class="col-md-12">California</p>
+                    </div> -->
+                    <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt="">
+                    <div class="row">
+                        <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+                    <div class="row">
+                        <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default col-sm-12 col-md-3 back-color">
+                <div class="panel-heading">
+                    <div class="row">
+                        <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
+                        <div class="col-sm-8">
+                            <h3 id="title" class="text-left">Miranda Solar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- <div class="row">
+                        <p class="col-md-12">California</p>
+                    </div> -->
+                    <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt="">
+                    <div class="row">
+                        <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+                    <div class="row">
+                        <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default col-sm-12 col-md-3 back-color">
+                <div class="panel-heading">
+                    <div class="row">
+                        <img class="col-sm-3 perfil-size" src="../assets/images/perfil9.jpg" alt="">
+                        <div class="col-sm-8">
+                            <h3 id="title" class="text-left">Miranda Solar</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!-- <div class="row">
+                        <p class="col-md-12">California</p>
+                    </div> -->
+                    <img class="img-responsive photo-size" src="../assets/images/img1.jpg" alt="">
+                    <div class="row">
+                        <p class="col-md-12" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <a href="#info" class="btn" data-toggle="modal" data-target="#info">Ver más...</a>
+                    <div class="row">
+                        <textarea class="form-control new-text" rows="1"></textarea>
+                        <button id="send" type="button">send</button>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <div class="modal fade" tabindex="-1" role="dialog" id="info">

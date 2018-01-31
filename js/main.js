@@ -79,6 +79,7 @@ var $textBtn = $('#send');
 var $container = $('#content');
 
 function botonSend(){
+  console.log(hola);
   if ($textArea.val()) {
     $container.prepend('<div class="new-item"><div class="row"><div class="col-md-10" id="new-container"></div></div></div>');
     var $text = $('#new-container');
