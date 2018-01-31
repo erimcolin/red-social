@@ -9,6 +9,7 @@ var data = [
   {
     'name': 'Carla Sánchez',
     'img': 'assets/images/img2.jpg',
+
     'title': 'Neblina',
     'category': 'bosque',
     'description': 'Qué intenso!'
@@ -62,4 +63,5 @@ var data = [
     'category': 'ciudad',
     'description': 'Aquí bien cosmopolitan'
   }
-]
+];
+
