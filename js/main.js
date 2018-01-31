@@ -8,6 +8,7 @@ function loadPage(){
   // funcion q al dar click a la imagen mande a loggearse
   // $('form').submit(filterPlaces);
   $('#search_button').click(cleanInput);
+  paintPost(data);
   
   //$textBtn.on('click', botonSend);
 };
@@ -87,6 +88,36 @@ function botonSend(){
     $textArea.val('');
     $textArea.focus();
   }
+};
+
+// pintar data en el contenedor
+function paintPost(array) {
+  var $container = $('#photo_container');
+// crear elementos de DOM
+  var $divColumna = $('<div />',{
+    'class':'col-md-4 col-sm-6 col-xs-12'
+  });
+  var $h3 = $('<h3 />');
+  var $img = $('<img />', {
+    'class':'img-responsive width-img'
+  });
+  var $p = $('<p />');
+
+  array.forEach(function(item) {
+    // atributos
+    $img.attr('src',item.img);
+    // asignando valores
+    $h3.text(item.title);
+    $p.text(item.description);
+    // padres a hijos
+    $divColumna.append($img);
+    $divColumna.append($h3);
+    $divColumna.append($p);
+  
+    console.log($container)
+    $container.prepend($divColumna);
+  });
+  // crear otro row y poner ahi la data pintada para que no se borre lo demas
 };
 
 // cambiar Vista, por revisar
