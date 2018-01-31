@@ -1,6 +1,7 @@
 function loadPage(){
-  splash();
+  // splash();
   $textBtn.on('click', botonSend);
+  // $newsfeed.click(changeView);
 };
 
 function splash(){
@@ -28,28 +29,11 @@ function botonSend(){
   }
 };
 
-// var boton = document.getElementById("sent-text");
-// var text = document.getElementById("text");
-// var newParraf = document.getElementById("container");
-// var letterCount = document.getElementById("characteres");
-
-//para imprimir los mensajes
-// boton.addEventListener("onclick", publish)
-
-// function publish(event) {
-//    if (text.value) {
-//      var parraf = document.createElement("p");
-//      console.log(parraf);
-//      var divContainer = document.createElement("div");
-//      console.log(divContainer);
-//      parraf.textContent = text.value;
-//      console.log(parraf.textContent);
-//      divContainer.appendChild(parraf);
-//      newParraf.appendChild(divContainer);
-//      divContainer.classList.add("content");
-//      texto.value = "";
-     // parraf.style.marginLeft = '14px';
-   // }
+// cambiar Vista, por revisar
+// var $newsfeed = $('#logIn');
+// function changeView(){
+//   location.href = 'views/newsfeed.html';
 // };
+
 
 $(document).ready(loadPage);

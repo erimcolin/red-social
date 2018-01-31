@@ -71,6 +71,14 @@ nav{
    height: 350px;
  }
 
-#homePage h3 p {
+
+body > div.container.homePage > div > div > h3{
   font-family: 'PT Sans Narrow', sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+body > div.container.homePage > div > div > p, h3{
+  text-align: center;
+  background-color: white;
 }
