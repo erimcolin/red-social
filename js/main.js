@@ -58,8 +58,8 @@ function putPhoto (item) {
   $p.text(item.description);
 
   // padres a hijos
-  $divColumna.append($h3);
   $divColumna.append($img);
+  $divColumna.append($h3);
   $divColumna.append($p);
 
   $container.append($divColumna);
