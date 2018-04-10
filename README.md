@@ -1,9 +1,11 @@
-## Crear una Red Social
+# Red Social
+
+Una red social para personas que viajan y que recomiendan lugares a través de fotografías
+
+![imagen](assets/images/socialNet.jpg)
 
 #### El reto:
 Un empresario se ha acercado a nuestro equipo de desarrollo para darnos la tarea de crear una red social que sea exitosa. La deficición de la tematica, diseño y detalles de dicha red social serán desarrollados por nuestra área de UX.
-
-![imagen](assets/images/socialNet.jpg)
 
 ### Proceso de UX
 #### Planeación
