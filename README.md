@@ -52,4 +52,10 @@ Feed con actualizaciones de tu aamigos
 Perfil de usuario
 ![Feed](assets/images/perfil.jpg)
 
+### Solución
+
+La página se realizó con HTML5, Jquery y Javascript
+
+![página principal](assets/images/red-social.png)
+
 ### Alcances del proyecto
