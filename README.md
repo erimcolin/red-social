@@ -60,5 +60,3 @@ Perfil de usuario
 La página se realizó con HTML5, Jquery y Javascript
 
 ![página principal](assets/images/red-social.png)
-
-### Alcances del proyecto
