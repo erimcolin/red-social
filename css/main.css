@@ -82,3 +82,8 @@ body > div.container.homePage > div > div > p, h3{
   text-align: center;
   background-color: white;
 }
+
+
+#carrusel{
+  height: 15vh;
+}

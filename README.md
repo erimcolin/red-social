@@ -1,11 +1,13 @@
-## Crear una Red Social 
+## Crear una Red Social
 
 #### El reto:
 Un empresario se ha acercado a nuestro equipo de desarrollo para darnos la tarea de crear una red social que sea exitosa. La deficición de la tematica, diseño y detalles de dicha red social serán desarrollados por nuestra área de UX.
 
+![imagen](assets/images/socialNet.jpg)
+
 ### Proceso de UX
 #### Planeación
-##### 1. Empetizar 
+##### 1. Empetizar
 Nuestra área de UX realizó entrevistas presenciales con personas de diferentes perfiles.
 
 Encontramos los siguientes "pain points":
@@ -16,15 +18,15 @@ Encontramos los siguientes "pain points":
 * El tiempo disponible para viajar es un factor para elegir el destino.
 * El presupuesto determina el tipo de viaje a realizar sin embargo para algunos usuarios no es un factor determinante.
 * Un mismo usuario puede viajar solo, con amigos, familiares, no siempre es el mismo tipo de viaje.
- 
+
 ##### 2. Definir
 Los perfiles que pudimos definir fueron:
 
 ![Perfiles](assets/images/perfiles.png)
 
-Factores primarios para elegir un destino: 
+Factores primarios para elegir un destino:
 * Elección por tipo de ambiente o actividades que se quieren realizar.
-Factores primarios para elegir un destino: 
+Factores primarios para elegir un destino:
 * Tiempo disponible para viajar.
 * Presupuesto disponible para realizar las actividades elegidas.
 * Busqueda de recomendaciones de lugares nuevos e interesantes
@@ -40,7 +42,7 @@ Red social donde te “inspires” e “inspires” a otros a elegir el siguient
 * En tu perfil tendrás dos secciones. Los lugares que has visitado y los lugares a los que quieres ir
 * Propuesta: al subir una foto se marcará en tu mapa personal un pin del lugar visitado y calculará los kilómetros recorridos desde tu lugar de origen. Por cada kilometro se darán puntos con los cuales puedes subir de nivel de viajaro
 
-##### 4. Prototipar 
+##### 4. Prototipar
 El prototipo cubrira los requerimientos minimos de una red social
 
 Página principal
