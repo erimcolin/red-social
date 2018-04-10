@@ -3,7 +3,7 @@
 #### El reto:
 Un empresario se ha acercado a nuestro equipo de desarrollo para darnos la tarea de crear una red social que sea exitosa. La deficición de la tematica, diseño y detalles de dicha red social serán desarrollados por nuestra área de UX.
 
-![imagen](assets/images/socialNet.jpg)
+![socialnet](https://user-images.githubusercontent.com/32862353/38569138-279fa846-3cb0-11e8-882a-2f9a899abdb5.jpg)
 
 ### Proceso de UX
 #### Planeación
