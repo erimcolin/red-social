@@ -1,8 +1,8 @@
 # Next Adventure
 
+Una red social para personas que viajan y que recomiendan lugares a través de fotografías, puedes agregar a tus amigos para compartir 
+las fotos de tus vacaciones
 ![socialnet](https://user-images.githubusercontent.com/32862353/38569138-279fa846-3cb0-11e8-882a-2f9a899abdb5.jpg)
-
-Una red social para personas que viajan y que recomiendan lugares a través de fotografías
 
 ### Desarrollado para Laboratoria
 
